@@ -10,7 +10,7 @@
         {{ site.SiteName }}
       </span>
       <span class="link">
-        <a draggable="false" class="site-link" v-bind:href="site.Link"
+        <a draggable="false" class="site-link" target="_blank" v-bind:href="site.Link"
           ><i class="fas fa-arrow-circle-right fa-2x"></i
         ></a>
       </span>
