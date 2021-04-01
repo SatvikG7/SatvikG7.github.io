@@ -2,8 +2,8 @@
   <nav id="nav" class="nav" @click="expand">
     <div class="grid">
       <div class="item br1" >
+          <span id="home"></span>
         <router-link to="/" id="logo-p" class="nav-link" >
-          <span id="home" ></span>
           <span id="logo"></span>
         </router-link>
       </div>
