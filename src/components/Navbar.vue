@@ -2,8 +2,8 @@
   <nav id="nav" class="nav" @click="expand">
     <div class="grid">
       <div class="item br1" >
-          <span id="home"></span>
         <router-link to="/" id="logo-p" class="nav-link" >
+          <span aria-disabled="true" id="home"></span>
           <span id="logo"></span>
         </router-link>
       </div>
@@ -40,7 +40,7 @@ export default {
 
 var i = 0;
 const mediaQuery = window.matchMedia("(max-width: 600px)");
-window.onload = (event) => {
+window.onload = () => {
   var element = document.getElementById("home");
   if (mediaQuery.matches) {
     element.classList.add("fas", "fa-bars");
