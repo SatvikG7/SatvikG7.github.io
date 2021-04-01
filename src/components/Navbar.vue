@@ -1,9 +1,9 @@
 <template>
-  <nav id="nav" class="nav" @click="expand">
+  <nav id="nav" class="nav" @click="expand" >
     <div class="grid">
-      <div class="item br1" >
-        <router-link to="/" id="logo-p" class="nav-link" >
-          <span aria-disabled="true" id="home"></span>
+      <div id="logo-p" class="item br1" >
+          <span  id="home"></span>
+        <router-link to="/"  class="nav-link name" >
           <span id="logo"></span>
         </router-link>
       </div>
@@ -45,10 +45,6 @@ window.onload = () => {
   if (mediaQuery.matches) {
     element.classList.add("fas", "fa-bars");
     document.getElementById("logo").innerHTML = "SatvikG7";
-    document.getElementById("logo-p").style.cssText =
-      "display:flex; width: 100%;align-items: center;justify-content:center;";
-    document.getElementById("logo").style.cssText =
-      "width:100%;font-size: 35px;";
   } else {
     element.style.display = "none";
     document.getElementById("logo").innerHTML = "SatvikG7";
@@ -142,8 +138,11 @@ div.item {
     color: ivory;
     background-color: transparent;
   }
-  .hidden {
-    display: none;
+  .name{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
   .br1 {
     border-radius: 0px;
@@ -157,6 +156,11 @@ div.item {
   }
   .lorem2 {
     font-size: 15px;
+  }
+  #home{
+    position: absolute;
+    left: 5px;
+    top: 5px;
   }
 }
 </style>

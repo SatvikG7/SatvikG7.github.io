@@ -31,6 +31,7 @@ export default {
 @media screen and (max-width: 600px) {
   .panel {
     grid-template-columns: auto;
+    margin-top: -10px;
   }
 }
 </style>
