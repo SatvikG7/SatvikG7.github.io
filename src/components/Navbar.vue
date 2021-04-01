@@ -1,7 +1,7 @@
 <template>
-  <nav id="nav" class="nav">
+  <nav id="nav" class="nav" @click="expand">
     <div class="grid">
-      <div class="item br1" @click="expand">
+      <div class="item br1" >
         <router-link to="/" id="logo-p" class="nav-link" >
           <span id="home" ></span>
           <span id="logo"></span>
@@ -62,6 +62,7 @@ nav {
   position: static;
   top: 0px;
   margin-bottom: 10px;
+  user-select: none;
 }
 
 .grid {
