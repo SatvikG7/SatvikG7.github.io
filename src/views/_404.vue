@@ -10,6 +10,3 @@ export default {
   name: "_404",
 };
 </script>
-
-<style>
-</style>
