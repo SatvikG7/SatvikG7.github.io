@@ -43,6 +43,7 @@ export default {
     rgba(37, 110, 192, 1) 73%,
     rgba(44, 133, 214, 1) 93%
   );
+  user-select: none;
 }
 h1 {
   font-family: fantasy;
