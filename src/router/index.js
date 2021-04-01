@@ -26,11 +26,17 @@ const routes = [
         name: 'Contact',
         component: Contact,
     },
+    {
+        path: '/*',
+        name: '404',
+        component: _404,
+    },
 
 
 ]
 
 const router = createRouter({
+    history: createWebHistory(process.env.BASE_URL),
     routes,
     mode:'hash'
 })
