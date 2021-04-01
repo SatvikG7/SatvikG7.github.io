@@ -1,0 +1,161 @@
+<template>
+  <nav id="nav" class="nav">
+    <div class="grid">
+      <div class="item br1" @click="expand">
+        <router-link to="/" id="logo-p" class="nav-link" >
+          <span id="home" ></span>
+          <span id="logo"></span>
+        </router-link>
+      </div>
+      <div class="item"><router-link class="nav-link" to="/projects">Projects</router-link></div>
+      <div class="item"><router-link class="nav-link" to="/gallery">Gallery</router-link></div>
+      <div class="item"><router-link class="nav-link" to="/contact">Contact Me</router-link></div>
+      <div class="item hidden"></div>
+      <div class="item br2">
+        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+      </div>
+    </div>
+  </nav>
+</template>
+
+<script>
+export default {
+  name: "Navbar",
+  methods: {
+    expand() {
+      if (mediaQuery.matches && i === 0) {
+        document.getElementById("nav").style.maxHeight;
+        document.getElementById("nav").style.overflow = "visible";
+        document.getElementById("nav").style.marginBottom = "220px";
+        i = 1;
+      } else if (mediaQuery.matches && i === 1) {
+        document.getElementById("nav").style.Height = "50px";
+        document.getElementById("nav").style.overflow = "hidden";
+        document.getElementById("nav").style.marginBottom = "10px";
+        i = 0;
+      }
+    },
+  },
+};
+
+var i = 0;
+const mediaQuery = window.matchMedia("(max-width: 600px)");
+window.onload = (event) => {
+  var element = document.getElementById("home");
+  if (mediaQuery.matches) {
+    element.classList.add("fas", "fa-bars");
+    document.getElementById("logo").innerHTML = "SatvikG7";
+    document.getElementById("logo-p").style.cssText =
+      "display:flex; width: 100%;align-items: center;justify-content:center;";
+    document.getElementById("logo").style.cssText =
+      "width:100%;font-size: 35px;";
+  } else {
+    element.style.display = "none";
+    document.getElementById("logo").innerHTML = "SatvikG7";
+  }
+};
+</script>
+
+<style scoped>
+nav {
+  display: block;
+  position: static;
+  top: 0px;
+  margin-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
+  column-gap: 0px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 5px #999090;
+}
+
+div.item {
+  border-right: 3px solid navy;
+  background-color: coral;
+
+  opacity: 1;
+}
+
+.item .nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 50px;
+  align-items: center;
+  color: ivory;
+  padding: 8px 0px;
+}
+.fa-bars {
+  font-size: 35px;
+}
+
+.item:hover {
+  background-color: #1db954;
+}
+.br1 {
+  border-radius: 0px 0px 0px 15px;
+}
+.br2 {
+  border-radius: 0px 0px 15px 0px;
+}
+.lorem1 {
+  font-size: 35px;
+}
+.lorem2 {
+  font-size: 30px;
+}
+#logo {
+  font-family: "Big Shoulders Stencil Display", cursive;
+}
+@media screen and (max-width: 900px) {
+  .item .nav-link{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+    width: 100%;
+    position: static;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7);
+    grid-row-gap: 1px;
+    box-shadow: none;
+  }
+
+  .item .nav-link {
+    line-height: 35px;
+    font-size: 18px;
+    float: left;
+    margin-left: 10px;
+    color: ivory;
+    background-color: transparent;
+  }
+  .hidden {
+    display: none;
+  }
+  .br1 {
+    border-radius: 0px;
+  }
+  .br2 {
+    border-radius: 0px;
+    float: right;
+  }
+  .lorem1 {
+    font-size: 20px;
+  }
+  .lorem2 {
+    font-size: 15px;
+  }
+}
+</style>
