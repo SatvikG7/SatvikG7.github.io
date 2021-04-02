@@ -1,15 +1,21 @@
 <template>
-  <nav id="nav" class="nav" @click="expand" >
+  <nav id="nav" class="nav" @click="expand">
     <div class="grid">
-      <div id="logo-p" class="item br1" >
-          <span  id="home"></span>
-        <router-link to="/"  class="nav-link name" >
-          <span id="logo"></span>
+      <div id="logo-p" class="item br1">
+        <span id="home" class="fas fa-bars hidden-bars"></span>
+        <router-link to="/" class="nav-link name">
+          <span id="logo">Satvik</span>
         </router-link>
       </div>
-      <div class="item"><router-link class="nav-link" to="/projects">Projects</router-link></div>
-      <div class="item"><router-link class="nav-link" to="/gallery">Gallery</router-link></div>
-      <div class="item"><router-link class="nav-link" to="/contact">Contact Me</router-link></div>
+      <div class="item">
+        <router-link class="nav-link" to="/projects">Projects</router-link>
+      </div>
+      <div class="item">
+        <router-link class="nav-link" to="/gallery">Gallery</router-link>
+      </div>
+      <div class="item">
+        <router-link class="nav-link" to="/contact">Contact Me</router-link>
+      </div>
       <div class="item hidden"></div>
       <div class="item br2">
         <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
@@ -40,16 +46,16 @@ export default {
 
 var i = 0;
 const mediaQuery = window.matchMedia("(max-width: 600px)");
-window.onload = () => {
-  var element = document.getElementById("home");
-  if (mediaQuery.matches) {
-    element.classList.add("fas", "fa-bars");
-    document.getElementById("logo").innerHTML = "SatvikG7";
-  } else {
-    element.style.display = "none";
-    document.getElementById("logo").innerHTML = "SatvikG7";
-  }
-};
+// window.onload = () => {
+//   var element = document.getElementById("home");
+//   if (mediaQuery.matches) {
+//     element.classList.add("fas", "fa-bars");
+//     document.getElementById("logo").innerHTML = "SatvikG7";
+//   } else {
+//     element.style.display = "none";
+//     document.getElementById("logo").innerHTML = "SatvikG7";
+//   }
+// };
 </script>
 
 <style scoped>
@@ -57,7 +63,7 @@ nav {
   display: block;
   position: static;
   top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   user-select: none;
 }
 
@@ -72,9 +78,7 @@ nav {
 
 div.item {
   border-right: 3px solid navy;
-  background-color: coral;
-
-  opacity: 1;
+  background-color: #0b1d42;
 }
 
 .item .nav-link {
@@ -84,15 +88,18 @@ div.item {
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 50px;
   align-items: center;
-  color: ivory;
+  color: khaki;
   padding: 8px 0px;
 }
 .fa-bars {
   font-size: 35px;
 }
-
 .item:hover {
-  background-color: #1db954;
+  background-color: #007e94;
+}
+.hidden:hover{
+  background-color: #0b1d42;
+
 }
 .br1 {
   border-radius: 0px 0px 0px 15px;
@@ -109,10 +116,16 @@ div.item {
 #logo {
   font-family: "Big Shoulders Stencil Display", cursive;
 }
-@media screen and (max-width: 900px) {
-  .item .nav-link{
+@media screen and (max-width: 1080px) {
+  .item .nav-link {
     font-size: 20px;
   }
+}
+@media screen and (min-width: 600px) {
+  .hidden-bars{
+    display: none;
+  }
+  
 }
 @media screen and (max-width: 600px) {
   nav {
@@ -122,14 +135,15 @@ div.item {
     height: 50px;
     overflow: hidden;
   }
-
   .grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7);
     grid-row-gap: 1px;
     box-shadow: none;
   }
-
+  .hidden{
+    display: none;
+  }
   .item .nav-link {
     line-height: 35px;
     font-size: 18px;
@@ -138,7 +152,7 @@ div.item {
     color: ivory;
     background-color: transparent;
   }
-  .name{
+  .name {
     display: flex;
     width: 100%;
     align-items: center;
@@ -157,7 +171,7 @@ div.item {
   .lorem2 {
     font-size: 15px;
   }
-  #home{
+  #home {
     position: absolute;
     left: 5px;
     top: 5px;

@@ -172,10 +172,10 @@ div:hover {
 .fa-github {
   color: black;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
   div {
-    width: 45vw;
-    height: 30vh;
+    width: 48vw;
+    height: 35vh;
   }
   .site-name {
     font-size: 20px;
