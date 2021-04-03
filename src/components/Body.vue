@@ -19,7 +19,7 @@
     <div class="pt-2">
       <div id="aboutme" class="about-me">
         <h2>
-          <a href="/#aboutme">#</a>
+          <a id="aboutmehash" href="/#aboutme">#</a>
           About Me
         </h2>
         <p class="about-me-text">
@@ -35,7 +35,7 @@
       <div id="skills" class="skills">
         <h2>
           <a href="/#skills">#</a>
-          Skills
+          My Skills
         </h2>
         <ul class="skills-list">
           <ul class="skills-list-item language">
@@ -86,7 +86,7 @@ export default {
   name: "Body",
   data() {
     return {
-      Header: "Welcome",
+      Header: "Hi! I'm Satvik Gaikwad",
     };
   },
 };
@@ -94,7 +94,7 @@ export default {
 
 <style scoped>
 .pt-1 {
-  margin: 5px 10px 5px 10px;
+  margin: 5px;
   padding: 10px 10px;
   border: 3px solid springgreen;
   border-radius: 10px;
@@ -141,26 +141,29 @@ h1:hover {
   }
 }
 </style>
-
-
-
 <style scoped>
 .pt-2 {
-  margin: 0px 10px;
+  margin: 0px 5px;
 }
 h2 {
   font: 30px "Big Shoulders Stencil Display";
-  background-color: #6461A0;
+  background-color: #6461a0;
+  border-radius: 6px 6px 0px 0px;
 }
 .about-me {
   border: 3px solid springgreen;
   border-radius: 10px;
 }
+.about-me h2 {
+  padding: 5px 10px;
+}
 .about-me-text {
   font: 400 22px "Noto serif";
   text-align: justify;
   text-justify: inter-word;
-  background-color: #9586A2;
+  background-color: #9586a2;
+  border-radius: 0px 0px 6px 6px;
+  padding: 0px 10px 5px 10px;
 }
 </style> 
 
@@ -170,16 +173,16 @@ h2 {
   border: 3px solid springgreen;
   margin-top: 5px;
   border-radius: 10px;
-  padding: 10px 10px;
+  padding: 5px 10px;
   background: linear-gradient(
     180deg,
-    #6461A0 7%,
-    #9586A2 7% 21%,
-    #9A8BA8 21% 35%,
-    #A396B0 35% 47%,
-    #ABA0B7 45% 68%,
-    #B3A9BE 68% 79%,
-    #BAB1C4 79% 100%
+    #6461a0 6%,
+    #9586a2 6% 21%,
+    #9a8ba8 21% 35%,
+    #a396b0 35% 47%,
+    #aba0b7 45% 68%,
+    #b3a9be 68% 79%,
+    #bab1c4 79% 100%
   );
 }
 .skills-list-item {
@@ -194,26 +197,27 @@ h2 {
 li {
   margin-left: 45px;
   font-weight: normal;
-  font-family: cursive;
+  font-family: "Fira Code", cursive;
   font-size: 0.85em;
   list-style: disc;
+  letter-spacing: -0.5px;
 }
 </style>
 
 <style scoped>
-a{
+a {
   text-decoration: none;
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 </style>
 <style scoped>
 @media screen and (max-width: 600px) {
-  .pt-1{
+  .pt-1 {
     margin: 5px 2px;
   }
-  .pt-2{
+  .pt-2 {
     margin: 5px 2px;
   }
 }

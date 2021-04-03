@@ -10,9 +10,14 @@
         {{ site.SiteName }}
       </span>
       <span class="link">
-        <a draggable="false" class="site-link" target="_blank" v-bind:href="site.Link"
-          ><i class="fas fa-arrow-circle-right fa-2x"></i
-        ></a>
+        <a
+          draggable="false"
+          class="site-link"
+          target="_blank"
+          v-bind:href="site.Link"
+        >
+          <span class="fas fa-arrow-circle-right fa-2x"></span>
+        </a>
       </span>
     </span>
     <span class="description">
@@ -124,7 +129,7 @@ div {
 div:hover {
   backface-visibility: hidden;
   box-shadow: 0 0 50px rgb(17 17 17 / 50%);
-    transform: rotate(-1deg) translateY(-2px) scale(1.025);
+  transform: rotate(-0.5deg) translateY(-2px) scale(1.02);
 }
 .site-title {
   display: flex;
@@ -146,13 +151,6 @@ div:hover {
 .site-link {
   color: #81f7e5;
 }
-.fa-arrow-circle-right {
-  transition: transform 500ms;
-}
-.fa-arrow-circle-right:hover {
-  color: #0bad94;
-  transform: scale(1.2);
-}
 .description {
   position: absolute;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -163,6 +161,14 @@ div:hover {
   color: yellow;
   background: linear-gradient(#aaa6a622 30%, #ffffff22 100%);
 }
+.fa-arrow-circle-right {
+  transition: transform 500ms;
+}
+.fa-arrow-circle-right:hover {
+  color: #0bad94;
+  transform: scale(1.2);
+}
+
 .github {
   position: absolute;
   right: 17px;
@@ -171,6 +177,11 @@ div:hover {
 }
 .fa-github {
   color: black;
+  transition: transform 500ms;
+
+}
+.fa-github:hover {
+  transform: scale(1.2);
 }
 @media screen and (max-width: 1080px) {
   div {

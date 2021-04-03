@@ -20,7 +20,7 @@ export default {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-evenly;
-  margin-top: 0px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1080px) {
