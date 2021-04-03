@@ -1,8 +1,9 @@
 <template>
-  <nav id="nav" class="nav" @click="expand">
+  <nav id="nav" class="nav">
     <div class="grid">
       <div id="logo-p" class="item br1">
-        <span id="home" class="fas fa-bars hidden-bars"></span>
+        <span id="home" @click="expand">&#9776;</span>
+        <span id="close" @click="expand">&bigotimes;</span>
         <router-link to="/" class="nav-link name">
           <span id="logo">Satvik</span>
         </router-link>
@@ -18,7 +19,7 @@
       </div>
       <div class="item hidden"></div>
       <div class="item br2">
-        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+        <a class="nav-link" href="#"><span>&#128269;</span></a>
       </div>
     </div>
   </nav>
@@ -33,11 +34,16 @@ export default {
         document.getElementById("nav").style.maxHeight;
         document.getElementById("nav").style.overflow = "visible";
         document.getElementById("nav").style.marginBottom = "220px";
+        document.getElementById("close").style = "display:block;";
+        document.getElementById("home").style = "display:none;";
         i = 1;
       } else if (mediaQuery.matches && i === 1) {
         document.getElementById("nav").style.Height = "50px";
         document.getElementById("nav").style.overflow = "hidden";
         document.getElementById("nav").style.marginBottom = "10px";
+
+        document.getElementById("home").style = "display:block;";
+        document.getElementById("close").style = "display:none;";
         i = 0;
       }
     },
@@ -56,6 +62,12 @@ const mediaQuery = window.matchMedia("(max-width: 600px)");
 //     document.getElementById("logo").innerHTML = "SatvikG7";
 //   }
 // };
+
+window.onload = () => {
+  if (mediaQuery.matches) {
+    document.getElementById("close").style = "display:none;";
+  }
+};
 </script>
 
 <style scoped>
@@ -91,15 +103,11 @@ div.item {
   color: khaki;
   padding: 8px 0px;
 }
-.fa-bars {
-  font-size: 35px;
-}
 .item:hover {
   background-color: #007e94;
 }
-.hidden:hover{
+.hidden:hover {
   background-color: #0b1d42;
-
 }
 .br1 {
   border-radius: 0px 0px 0px 15px;
@@ -115,6 +123,7 @@ div.item {
 }
 #logo {
   font-family: "Big Shoulders Stencil Display", cursive;
+  font-size: 30px;
 }
 @media screen and (max-width: 1080px) {
   .item .nav-link {
@@ -122,10 +131,12 @@ div.item {
   }
 }
 @media screen and (min-width: 600px) {
-  .hidden-bars{
+  #home {
     display: none;
   }
-  
+  #close {
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   nav {
@@ -141,7 +152,7 @@ div.item {
     grid-row-gap: 1px;
     box-shadow: none;
   }
-  .hidden{
+  .hidden {
     display: none;
   }
   .item .nav-link {
@@ -149,7 +160,7 @@ div.item {
     font-size: 18px;
     float: left;
     margin-left: 10px;
-    color: ivory;
+    color: khaki;
     background-color: transparent;
   }
   .name {
@@ -174,7 +185,18 @@ div.item {
   #home {
     position: absolute;
     left: 5px;
-    top: 5px;
+    top: 0px;
+    font-size: 30px;
+    font-weight: 800;
+    color: khaki;
+  }
+  #close {
+    position: absolute;
+    left: 5px;
+    top: -2px;
+    font-size: 30px;
+    font-weight: 800;
+    color: khaki;
   }
 }
 </style>
