@@ -171,6 +171,7 @@ nav {
     position: absolute;
     left: 5px;
     top: 0px;
+    bottom:0px;
     font-size: 30px;
     font-weight: 800;
     color: khaki;
@@ -178,7 +179,8 @@ nav {
   #close {
     position: absolute;
     left: 5px;
-    top: -2px;
+    top: 0px;
+    bottom:0px;
     font-size: 30px;
     font-weight: 800;
     color: khaki;

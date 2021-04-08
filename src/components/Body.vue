@@ -129,11 +129,15 @@ h1 {
   background-repeat: repeat;
   background-clip: text;
   font-weight: 550;
-  font-family: "Noto Serif", serif;
+  font-family: serif;
 }
 @media screen and (max-width: 600px) {
+  h1{
+    font-weight: 500;
+    font-size: 30px;
+  }
   .header {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 </style>
@@ -154,7 +158,7 @@ h2 {
   padding: 5px 10px;
 }
 .about-me-text {
-  font: 400 22px "Noto serif";
+  font: 400 22px serif;
   text-align: justify;
   text-justify: inter-word;
   background-color: #9586a2;
