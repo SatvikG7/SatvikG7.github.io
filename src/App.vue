@@ -24,19 +24,22 @@ export default {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 ::-webkit-scrollbar {
-  width: 15px;
-  scrollbar-color: #666 #201c29;
+  width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #434343;
+  background: #707070;
   border-radius: 16px;
   box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
     inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 ::-webkit-scrollbar-track {
-  background: #c6c6c6;
+  background: black;
 }
-body{
+body {
   background-color: black;
+}
+::selection{
+  color: black;
+  background-color: mediumturquoise;
 }
 </style>

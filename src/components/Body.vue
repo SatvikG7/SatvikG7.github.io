@@ -86,7 +86,7 @@ export default {
   name: "Body",
   data() {
     return {
-      Header: "Hi! I'm Satvik Gaikwad",
+      Header: "Hi I'm Satvik Gaikwad",
     };
   },
 };
@@ -102,10 +102,9 @@ export default {
     135deg,
     rgba(5, 12, 101, 1) 4%,
     rgba(19, 54, 140, 1) 38%,
-    rgba(37, 110, 192, 1) 73%,
-    rgba(44, 133, 214, 1) 93%
+    rgb(37, 89, 148) 73%,
+    rgb(30, 85, 136) 93%
   );
-  user-select: none;
 }
 h1 {
   font-family: fantasy;
@@ -116,23 +115,20 @@ h1 {
   text-decoration-style: wavy;
   display: inline;
 }
-h1:hover {
-  text-decoration-style: inherit;
-}
 .header {
   font-size: 24px;
   text-align: justify;
   text-justify: inter-word;
   color: transparent;
   background-image: linear-gradient(
-    135deg,
+    180deg,
     rgba(250, 205, 40, 1) 4%,
-    rgba(214, 81, 44, 1) 93%
+    rgb(224, 50, 26) 93%
   );
   background-size: 100%;
   background-repeat: repeat;
   background-clip: text;
-  font-weight: 900;
+  font-weight: 550;
   font-family: "Noto Serif", serif;
 }
 @media screen and (max-width: 600px) {

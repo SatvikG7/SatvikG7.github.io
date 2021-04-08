@@ -1,7 +1,7 @@
 <template>
   <nav id="nav" class="nav">
     <div class="grid">
-      <div id="logo-p" class="item br1">
+      <div id="logo-p" class="item">
         <span id="home" @click="expand">&#9776;</span>
         <span id="close" @click="expand">&bigotimes;</span>
         <router-link to="/" class="nav-link name">
@@ -18,7 +18,7 @@
         <router-link class="nav-link" to="/contact">Contact Me</router-link>
       </div>
       <div class="item hidden"></div>
-      <div class="item br2">
+      <div class="item ">
         <a class="nav-link" href="#"><span>&#128269;</span></a>
       </div>
     </div>
@@ -81,53 +81,52 @@ nav {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
+  grid-template-columns: repeat(6, auto);
   column-gap: 0px;
   text-align: center;
   border-radius: 15px;
-  box-shadow: 0px 5px #999090;
 }
 
-div.item {
+.item {
   border-right: 3px solid navy;
   background-color: #0b1d42;
+  position: relative;
 }
-
+.item:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+.item:hover:not(:nth-child(5),:nth-child(6))::after{
+  width: 100%;
+  border: 1px solid khaki;
+  transition: width 0.5s linear;
+}
 .item .nav-link {
   text-decoration: none;
   color: black;
-  font-size: 30px;
+  font-size: 28px;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 50px;
   align-items: center;
   color: khaki;
   padding: 8px 0px;
 }
-.item:hover {
-  background-color: #007e94;
-}
 .hidden:hover {
   background-color: #0b1d42;
 }
-.br1 {
-  border-radius: 0px 0px 0px 15px;
-}
-.br2 {
-  border-radius: 0px 0px 15px 0px;
-}
-.lorem1 {
-  font-size: 35px;
-}
-.lorem2 {
-  font-size: 30px;
-}
+
 #logo {
   font-family: "Big Shoulders Stencil Display", cursive;
   font-size: 30px;
 }
 @media screen and (max-width: 1080px) {
   .item .nav-link {
-    font-size: 20px;
+    font-size: 24;
   }
 }
 @media screen and (min-width: 600px) {
@@ -150,7 +149,6 @@ div.item {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7);
     grid-row-gap: 1px;
-    box-shadow: none;
   }
   .hidden {
     display: none;
@@ -168,19 +166,6 @@ div.item {
     width: 100%;
     align-items: center;
     justify-content: center;
-  }
-  .br1 {
-    border-radius: 0px;
-  }
-  .br2 {
-    border-radius: 0px;
-    float: right;
-  }
-  .lorem1 {
-    font-size: 20px;
-  }
-  .lorem2 {
-    font-size: 15px;
   }
   #home {
     position: absolute;
