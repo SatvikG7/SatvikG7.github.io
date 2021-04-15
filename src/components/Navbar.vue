@@ -170,7 +170,7 @@ nav {
   #home {
     position: absolute;
     left: 5px;
-    top: 0px;
+    top: 10px;
     bottom:0px;
     font-size: 30px;
     font-weight: 800;
@@ -179,7 +179,7 @@ nav {
   #close {
     position: absolute;
     left: 5px;
-    top: 0px;
+    top: 10px;
     bottom:0px;
     font-size: 30px;
     font-weight: 800;
