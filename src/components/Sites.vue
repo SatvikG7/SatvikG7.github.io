@@ -56,18 +56,18 @@ export default {
       },
       {
         id: 2,
-        SiteName: "Spotify",
-        Link: "https://spotify-satvikg7.ml/",
+        SiteName: "Fullpage Scroll",
+        Link: "https://satvikg7.github.io/Fullpage-Scroll/",
         Description:
-          "Spotify Playlist for India's Top 50 Songs Updated Daily without ads ",
+          "This is a simple website that demonstrates the Javascript code to make SPAs",
         NoRepo: false,
-        Source: "https://github.com/SatvikG7/Spotify-SatvikG7",
+        Source: "https://github.com/SatvikG7/Fullpage-Scroll",
         BgImg: require("../assets/img/2.png"),
       },
       {
         id: 3,
         SiteName: "Pop Out Menu",
-        Link: "https://pop-out-menu-satvikg7.web.app/",
+        Link: "https://satvikg7.github.io/Pop-out-Menu/",
         Description:
           "Another responsive Element with transition and can be used for Social links",
         NoRepo: false,
