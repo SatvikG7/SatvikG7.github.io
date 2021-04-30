@@ -16,7 +16,7 @@
           target="_blank"
           v-bind:href="site.Link"
         >
-          <span class="fas fa-arrow-circle-right fa-2x"></span>
+          <img src="../assets/svg/arrow-circle-right.svg" class="fas fa-arrow-circle-right">
         </a>
       </span>
     </span>
@@ -28,8 +28,9 @@
     <span class="github">
       <p v-if="site.NoRepo">No Repo for this project</p>
       <a draggable="false" v-else v-bind:href="site.Source"
-        ><i class="fab fa-github fa-2x"></i
-      ></a>
+        >
+          <img src="../assets/svg/github.svg" class="fas fa-github">
+          </a>
     </span>
   </div>
 </template>
@@ -162,26 +163,25 @@ div:hover {
   background: linear-gradient(#aaa6a622 30%, #ffffff22 100%);
 }
 .fa-arrow-circle-right {
+  width: 35px;
   transition: transform 500ms;
 }
 .fa-arrow-circle-right:hover {
-  color: #0bad94;
   transform: scale(1.2);
 }
-
+.fa-github {
+  width: 35px;
+  color: black;
+  transition: transform 500ms;
+}
+.fa-github:hover {
+  transform: scale(1.2);
+}
 .github {
   position: absolute;
   right: 17px;
   bottom: 10px;
   color: black;
-}
-.fa-github {
-  color: black;
-  transition: transform 500ms;
-
-}
-.fa-github:hover {
-  transform: scale(1.2);
 }
 @media screen and (max-width: 1080px) {
   div {
