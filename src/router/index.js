@@ -3,7 +3,7 @@ import Home from '../views/Home'
 import Projects from '../views/Projects'
 import Gallery from '../views/Gallery'
 import Contact from '../views/Contact'
-import _404 from '../views/_404'
+import _404 from '../views/404'
 
 const routes = [
     {
@@ -29,7 +29,7 @@ const routes = [
     {
         path: '/*',
         name: '404',
-        component: _404,
+        component: 404,
     },
 
 
