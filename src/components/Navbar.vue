@@ -8,17 +8,23 @@
           <span id="logo">Satvik</span>
         </router-link>
       </div>
-      <div class="item">
-        <router-link class="nav-link" to="/projects">Projects</router-link>
-      </div>
-      <div class="item">
-        <router-link class="nav-link" to="/gallery">Gallery</router-link>
-      </div>
-      <div class="item">
-        <router-link class="nav-link" to="/contact">Contact Me</router-link>
-      </div>
+      <router-link class="nav-link" to="/projects">
+        <div class="item">
+          Projects
+        </div>
+      </router-link>
+      <router-link class="nav-link" to="/gallery">
+        <div class="item">
+          Gallery
+        </div>
+      </router-link>
+      <router-link class="nav-link" to="/contact">
+        <div class="item">
+          Contact Me
+        </div>
+      </router-link>
       <div class="item hidden"></div>
-      <div class="item ">
+      <div class="item hidden">
         <a class="nav-link" href="#"><span>&#128269;</span></a>
       </div>
     </div>
@@ -33,7 +39,7 @@ export default {
       if (mediaQuery.matches && i === 0) {
         document.getElementById("nav").style.maxHeight;
         document.getElementById("nav").style.overflow = "visible";
-        document.getElementById("nav").style.marginBottom = "220px";
+        document.getElementById("nav").style.marginBottom = "160px";
         document.getElementById("close").style = "display:block;";
         document.getElementById("home").style = "display:none;";
         i = 1;
@@ -41,7 +47,6 @@ export default {
         document.getElementById("nav").style.Height = "50px";
         document.getElementById("nav").style.overflow = "hidden";
         document.getElementById("nav").style.marginBottom = "10px";
-
         document.getElementById("home").style = "display:block;";
         document.getElementById("close").style = "display:none;";
         i = 0;
@@ -49,7 +54,6 @@ export default {
     },
   },
 };
-
 var i = 0;
 const mediaQuery = window.matchMedia("(max-width: 600px)");
 // window.onload = () => {
@@ -62,7 +66,6 @@ const mediaQuery = window.matchMedia("(max-width: 600px)");
 //     document.getElementById("logo").innerHTML = "SatvikG7";
 //   }
 // };
-
 window.onload = () => {
   if (mediaQuery.matches) {
     document.getElementById("close").style = "display:none;";
@@ -78,7 +81,6 @@ nav {
   margin-bottom: 5px;
   user-select: none;
 }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(6, auto);
@@ -86,11 +88,12 @@ nav {
   text-align: center;
   border-radius: 15px;
 }
-
-.item {
-  border-right: 3px solid navy;
+.item{
   background-color: #0b1d42;
   position: relative;
+}
+.item:not(:nth-child(6)) {
+  border-right: 3px solid navy;
 }
 .item:after {
   content: "";
@@ -101,12 +104,12 @@ nav {
   left: 0;
   box-sizing: border-box;
 }
-.item:hover:not(:nth-child(5),:nth-child(6))::after{
+.item:hover:not(:nth-child(5), :nth-child(6))::after {
   width: 100%;
   border: 1px solid khaki;
   transition: width 0.5s linear;
 }
-.item .nav-link {
+.nav-link {
   text-decoration: none;
   color: black;
   font-size: 28px;
@@ -114,13 +117,13 @@ nav {
   line-height: 50px;
   align-items: center;
   color: khaki;
-  padding: 8px 0px;
+  padding: 0px 0px;
 }
 .hidden:hover {
   background-color: #0b1d42;
 }
-
 #logo {
+  padding: 0px 30px;
   font-family: "Big Shoulders Stencil Display", cursive;
   font-size: 30px;
 }
@@ -166,12 +169,13 @@ nav {
     width: 100%;
     align-items: center;
     justify-content: center;
+    height: 50px; 
   }
   #home {
     position: absolute;
     left: 5px;
     top: 5px;
-    bottom:0px;
+    bottom: 0px;
     font-size: 30px;
     font-weight: 800;
     color: khaki;
@@ -180,7 +184,7 @@ nav {
     position: absolute;
     left: 5px;
     top: 5px;
-    bottom:0px;
+    bottom: 0px;
     font-size: 30px;
     font-weight: 800;
     color: khaki;
