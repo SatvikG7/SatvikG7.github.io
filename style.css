@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 3rem;
+    background-color: orange;
+}
+
+h2 {
+    font-size: 2.75rem;
+    background-color: aquamarine;
+}
+
+h3 {
+    font-size: 2.5rem;
+    background-color: coral;
+}
+
+h4 {
+    font-size: 2.25rem;
+    background-color: cornflowerblue;
+}
+
+h5 {
+    font-size: 2rem;
+    background-color: mediumspringgreen;
+}
+
+h6,
+ul li {
+    font-size: 1.75rem;
+    background-color: plum;
+}
+
+li::marker {
+    content: "~ ";
+}
+
+ul {
+    margin-right: 18px;
+    background-color: plum;
+}
+
+a {
+    color: blue;
+}
+
+a::before {
+    content: "\1F517";
+}
