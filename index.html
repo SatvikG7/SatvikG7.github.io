@@ -1,52 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SatvikG7</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="main.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SatvikG7</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="main.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-</head>
-
-<body>
-    <h1>Name: Satvik Gaikwad</h1>
-    <h2>Bio: Student from India. A little bit Intovert, Funny and Lazy. I build/explore apps in free time.</h2>
-    <h3>Interests: Machine Learning, Deep Learning, Maths, Problem Solving, building useless web app and apis.</h3>
-    <h4>Highlights:
-        <table border="1" >
-            <tr>
-                <td><a target="_blank" href="https://txt-share.web.app">txt-share.web.app</a></td>
-                <td><a target="_blank" href="https://turl.vercel.app">turl.vercel.app</a></td>
-                <td><a target="_blank" href="https://toact.netlify.app">toact.netlify.app</a> </td>
-            </tr>
-        </table>
-    </h4>
-    <h5>Links: 
-        <table border="1">
-            <tr>
-                <td>Github</td>
-                <td><a target="_blank" href="https://github.com/SatvikG7">github.com/SatvikG7</a></td>
-            </tr>
-            <tr>
-                <td>Gitlab</td>
-                <td><a target="_blank" href="https://gitlab.com/SatvikG7">gitlab.com/SatvikG7</a></td>
-            </tr>
-            <tr>
-                <td>BioPage</td>
-                <td><a target="_blank" href="https://bit.ly/m/SatvikG7">bit.ly/m/SatvikG7</a></td>
-            </tr>
-        </table>
-    <h6>
-        Skills:
-        <ul>
-            <li>Programming Languages: C++, Go, Javascript (in Nodejs).</li>
-            <li>Javascript Framework: React.js, Next.js. </li>
-            <li>Scripting Language: Python (lol I don't like it but I need to use it for ML).</li>
-        </ul>
-    </h6>
-</body>
-
+    <body>
+        <div id="name" class="is-size-1">
+            Name: Satvik Gaikwad <br />
+            <p class="is-size-4">
+                (I'm almost present everywhere with username @SatvikG7 or
+                @Satvik_G_7)
+            </p>
+        </div>
+        <div id="bio" class="is-size-3">
+            Bio: <p class="is-size-4">I'm in my second year of Electronics and Telecommunication
+            Engineering at the College of Engineering Pune Technological
+            University, Pune (COEP TECH). I'm a bit of an introvert, love
+            cracking jokes, and enjoy being lazy sometimes. In my free time, I
+            like messing around with apps, and I'm a huge fan of open-source
+            stuff.</p>
+        </div>
+        <div id="interests" class="is-size-3">
+            Interests: <p class="is-size-4"> Web Apps, AI-ML, Deep Learning, Maths, Problem Solving,
+            Building useless web apps and apis. </p>
+        </div>
+        <div id="phs" class="is-size-3">
+            Projects/Highlights:
+            <div class="is-flex is-flex-direction-row is-flex-wrap-wrap">
+                <div>
+                    <div class="is-size-5">
+                        TXT-Share: Seamlessly Share Text Across Your Devices
+                        with Google Sign-In. Say goodbye to messaging apps and
+                        emails for quick, hassle-free text sharing!
+                    </div>
+                    <a
+                        class="is-size-5"
+                        target="_blank"
+                        href="https://txt-share.web.app"
+                        >txt-share.web.app</a
+                    >
+                </div>
+                <div>
+                    <div class="is-size-5">
+                        TURL: Your Shortcut to Shortened URLs. Say goodbye to
+                        those never-ending web addresses with our simple link
+                        shortener!
+                    </div>
+                    <a
+                        class="is-size-5"
+                        target="_blank"
+                        href="https://turl.vercel.app"
+                        >turl.vercel.app</a
+                    >
+                </div>
+                <div>
+                    <div class="is-size-5">
+                        TOACT: Your To-Do List Packed with Features! Organize
+                        tasks with ease using this React-powered, Material
+                        UI-based, Progressive Web App.
+                    </div>
+                    <a
+                        class="is-size-5"
+                        target="_blank"
+                        href="https://toact.netlify.app"
+                        >toact.netlify.app</a
+                    >
+                </div>
+            </div>
+        </div>
+        <div id="links" class="is-size-3">
+            Links:
+            <div class="is-flex is-flex-direction-row is-flex-wrap-wrap">
+                <div class="is-flex is-flex-direction-column">
+                    <div class="is-size-4">Github</div>
+                    <a
+                        class="is-size-4"
+                        target="_blank"
+                        href="https://github.com/SatvikG7"
+                        >github.com/SatvikG7</a
+                    >
+                </div>
+                <div class="is-flex is-flex-direction-column">
+                    <div class="is-size-4">Gitlab</div>
+                    <a
+                        class="is-size-4"
+                        target="_blank"
+                        href="https://gitlab.com/SatvikG7"
+                        >gitlab.com/SatvikG7</a
+                    >
+                </div>
+                <div class="is-flex is-flex-direction-column">
+                    <div class="is-size-4">Leetcode</div>
+                    <a
+                        class="is-size-4"
+                        target="_blank"
+                        href="https://leetcode.com/SatvikG7/"
+                        >leetcode.com/SatvikG7</a
+                    >
+                </div>
+                <div class="is-flex is-flex-direction-column">
+                    <div class="is-size-4">Codeforces</div>
+                    <a
+                        class="is-size-4"
+                        target="_blank"
+                        href="https://codeforces.com/profile/SatvikG7"
+                        >codeforces.com/profile/SatvikG7</a
+                    >
+                </div>
+                <div class="is-flex is-flex-direction-column">
+                    <div class="is-size-4">BioPage</div>
+                    <a
+                        class="is-size-4"
+                        target="_blank"
+                        href="https://bit.ly/m/SatvikG7"
+                        >bit.ly/m/SatvikG7</a
+                    >
+                </div>
+                <div class="is-flex is-flex-direction-column">
+                    <div class="is-size-4">Kaggle</div>
+                    <a
+                        class="is-size-4"
+                        target="_blank"
+                        href="https://kaggle.com/satvikgaikwad"
+                        >kaggle.com/satvikgaikwad</a
+                    >
+                </div>
+                <div class="is-flex is-flex-direction-column">
+                    <div class="is-size-4">Linkedin</div>
+                    <a
+                        class="is-size-4"
+                        target="_blank"
+                        href="https://www.linkedin.com/in/satvikg7/"
+                        >www.linkedin.com/in/satvikg7</a
+                    >
+                </div>
+                <div class="is-flex is-flex-direction-column">
+                    <div class="is-size-4">Instagram</div>
+                    <a
+                        class="is-size-4"
+                        target="_blank"
+                        href="https://www.instagram.com/satvik_g_7/"
+                        >@satvik_g_7</a
+                    >
+                </div>
+                <div class="is-flex is-flex-direction-column">
+                    <div class="is-size-4">X</div>
+                    <a
+                        class="is-size-4"
+                        target="_blank"
+                        href="https://x.com/satvik_g_7"
+                        >@satvik_g_7</a
+                    >
+                </div>
+            </div>
+        </div>
+        <div id="skills" class="is-size-3">
+            Skills:
+            <ul id="skills-list">
+                <li class="is-size-4">
+                    Programming Languages: C++, Go, Javascript (Nodejs), Typescript
+                </li>
+                <li class="is-size-4">
+                    Javascript Framework: React.js, Next.js, Vue.js, Nuxt.js, Vite.js
+                </li>
+                <li class="is-size-4">
+                    Scripting Language: Python
+                </li>
+            </ul>
+        </div>
+    </body>
 </html>
