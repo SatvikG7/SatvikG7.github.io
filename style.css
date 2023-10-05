@@ -27,7 +27,6 @@
   background-color: cornflowerblue;
 }
 
-
 #links {
   padding: 12px;
   background-color: mediumspringgreen;
@@ -66,8 +65,11 @@
   background-color: plum;
 }
 
-#skills ul{
+#skills{
+  padding: 12px;
+}
 
+#skills ul{
   padding: 12px;
 }
 
