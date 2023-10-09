@@ -61,15 +61,19 @@
   border: none;
 }
 
+#links div div a {
+  overflow: auto;
+}
+
 #skills {
   background-color: plum;
 }
 
-#skills{
+#skills {
   padding: 12px;
 }
 
-#skills ul{
+#skills ul {
   padding: 12px;
 }
 
@@ -81,10 +85,11 @@ a::before {
   content: "\1F517";
 }
 
-@media screen and (max-width: 768px){
-  #phs div div  {
+@media screen and (max-width: 768px) {
+  #phs div div {
     width: 100%;
   }
+
   #links div div {
     width: 100%;
   }
