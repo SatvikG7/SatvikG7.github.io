@@ -5,6 +5,7 @@
   font-family: monospace;
   font-size: 24px;
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
+  color: black !important;
 }
 
 #name {
@@ -45,6 +46,7 @@
 #phs div div div {
   width: 100%;
   border: none;
+  color: black;
 }
 
 #links div {
@@ -78,7 +80,8 @@
 }
 
 a {
-  color: blue;
+  color: white !important;
+  text-decoration: underline !important;
 }
 
 a::before {
