@@ -5,95 +5,188 @@
   font-family: monospace;
   font-size: 24px;
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
-  color: black !important;
-}
-
-#name {
-  padding: 12px;
-  background-color: orange;
-}
-
-#bio {
-  padding: 12px;
-  background-color: aquamarine;
-}
-
-#interests {
-  padding: 12px;
-  background-color: coral;
-}
-
-#phs {
-  padding: 12px;
-  background-color: cornflowerblue;
-}
-
-#links {
-  padding: 12px;
-  background-color: mediumspringgreen;
-}
-
-#phs div {
-  padding: 12px;
-}
-
-#phs div div {
-  padding: 4px;
-  border: 1px solid black;
-  width: 33%;
-}
-
-#phs div div div {
-  width: 100%;
-  border: none;
   color: black;
 }
 
-#links div {
+section {
   padding: 12px;
 }
 
-#links div div {
-  padding: 4px;
-  border: 1px solid black;
+.name {
+  background-color: #FF7F50;
 }
 
-#links div div div {
-  width: 100%;
-  border: none;
+.bio {
+  background-color: #FFD700;
 }
 
-#links div div a {
-  overflow: auto;
+.interests {
+  background-color: #D086F6;
 }
 
-#skills {
-  background-color: plum;
+.projects {
+  background-color: #00A4DE;
 }
 
-#skills {
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid #1a1a1a;
+  height: 100%;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project .title {
+  background-color: #1a1a1a;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e0e0e0;
+  flex-shrink: 0;
+}
+
+.project .title .controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.control {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  background-color: #777;
+}
+
+.control.close {
+  background-color: #e33;
+}
+
+.control.minimize {
+  background-color: #ee0;
+}
+
+.control.maximize {
+  background-color: #0b0;
+}
+
+.project .title p {
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+}
+
+.project .title a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.project .subtitle {
+  background-color: #FFE4B5;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #333;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.project .chips {
+  padding: 12px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+
+.project .chip {
+  background-color: #a0e6f5;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.links {
+  background-color: seagreen;
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.link {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid #1a1a1a;
   padding: 12px;
 }
 
-#skills ul {
+#skills-list {
+  list-style: none;
   padding: 12px;
 }
 
-a {
-  color: white !important;
-  text-decoration: underline !important;
+.skill-type {
+  background-color: #ecf0f1;
+  border-left: 4px solid #3498db;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  color: #2c3e50;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-a::before {
-  content: "\1F517";
+.skill-type:hover {
+  background-color: #d9eaf7;
+  transform: translateY(-3px);
 }
 
-@media screen and (max-width: 768px) {
-  #phs div div {
-    width: 100%;
-  }
+.skill-category {
+  font-weight: 600;
+  color: #2980b9;
+  margin-right: 10px;
+}
 
-  #links div div {
-    width: 100%;
-  }
+.skills-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills-chips span{
+  background-color: #3498db;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
 }

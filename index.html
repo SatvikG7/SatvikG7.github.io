@@ -7,10 +7,6 @@
         <title>SatvikG7</title>
         <link rel="stylesheet" href="style.css" />
         <script defer src="main.js"></script>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -25,16 +21,16 @@
     </head>
 
     <body>
-        <div id="name" class="is-size-2">
-            Name: Satvik Gaikwad <br />
-            <p class="is-size-4">
+        <section class="name">
+            <p class="title">Name: Satvik Gaikwad</p>
+            <p class="subtitle">
                 (I'm almost present everywhere with username @SatvikG7 or
                 @Satvik_G_7)
             </p>
-        </div>
-        <div id="bio" class="is-size-3">
-            Bio:
-            <p class="is-size-4">
+        </section>
+        <section class="bio">
+            <p class="title">Bio:</p>
+            <p class="subtitle">
                 I'm in my third year of Electronics and Telecommunication
                 Engineering at the College of Engineering Pune Technological
                 University, Pune (COEP TECH). I'm a bit of an introvert, love
@@ -45,213 +41,319 @@
                 language and I'm currently learning about AI/ML and Deep
                 Learning.
             </p>
-        </div>
-        <div id="interests" class="is-size-3">
-            Interests:
-            <p class="is-size-4">
+        </section>
+        <section class="interests">
+            <p class="title">Interests:</p>
+            <p class="subtitle">
                 Electronics, Web Apps, AI-ML, Deep Learning, Maths, Problem
                 Solving, Building useless web apps and apis.
             </p>
-        </div>
-        <div id="phs" class="is-size-3">
-            Projects/Highlights:
-            <div class="is-flex is-flex-direction-row is-flex-wrap-wrap">
-                <div>
-                    <div class="is-size-5">
-                        Twarit: Cross-Platform File Sharing App with End-to-End
-                        Encryption, developed in Go.
+        </section>
+        <section class="projects">
+            <p class="title">Projects/Highlights:</p>
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="title">
+                        <div class="controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                            <p>Twarit</p>
+                        </div>
+
+                        <a
+                            target="_blank"
+                            href="https://github.com/SatvikG7/Twarit"
+                            >↗️</a
+                        >
                     </div>
-                    <a
-                        class="is-size-5"
-                        target="_blank"
-                        href="https://github.com/SatvikG7/Twarit"
-                        >github.com/SatvikG7/Twarit</a
-                    >
+                    <div class="subtitle">
+                        Cross-Platform File Sharing App with End-to-End
+                        Encryption
+                    </div>
+                    <div class="chips">
+                        <span class="chip">Go</span>
+                        <span class="chip">React.js</span>
+                        <span class="chip">TailwindCSS</span>
+                        <span class="chip">Firebase</span>
+                    </div>
                 </div>
-                <div>
-                    <div class="is-size-5">
-                        OpenNEP: A Chatbot for National Education Policy 2020
-                        using RAG and Langchain on a fine-tuned LLM.
+                <div class="project">
+                    <div class="title">
+                        <div class="controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                            <p>OpenNEP</p>
+                        </div>
+                        <a
+                            target="_blank"
+                            href="https://github.com/SatvikG7/OpenNEP"
+                            >↗️</a
+                        >
                     </div>
-                    <a
-                        class="is-size-5"
-                        target="_blank"
-                        href="https://github.com/SatvikG7/OpenNEP"
-                        >github.com/SatvikG7/OpenNEP</a
-                    >
+                    <div class="subtitle">
+                        A Chatbot for National Education Policy 2020 using RAG
+                        and Langchain on a fine-tuned LLM.
+                    </div>
+                    <div class="chips">
+                        <span class="chip">RAG</span>
+                        <span class="chip">Langchain</span>
+                        <span class="chip">LLM</span>
+                    </div>
                 </div>
-                <div>
-                    <div class="is-size-5">
-                        Scalable Notification System: High-Performance
-                        Notification System built with Go, RabbitMQ, and
-                        PostgreSQL, capable of handling multiple channels and
-                        priority queues.
+
+                <div class="project">
+                    <div class="title">
+                        <div class="controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                            <p>Notification System</p>
+                        </div>
+                        <a
+                            target="_blank"
+                            href="https://github.com/SatvikG7/Scalable-Notification-System"
+                            >↗️</a
+                        >
                     </div>
-                    <a
-                        class="is-size-5"
-                        target="_blank"
-                        href="https://github.com/SatvikG7/Scalable-Notification-System"
-                        >github.com/SatvikG7/Scalable-Notification-System</a
-                    >
+                    <div class="subtitle">
+                        High-Performance Notification System built with Go,
+                        RabbitMQ, and PostgreSQL, capable of handling multiple
+                        channels and priority queues.
+                    </div>
+                    <div class="chips">
+                        <span class="chip">Go</span>
+                        <span class="chip">RabbitMQ</span>
+                        <span class="chip">PostgreSQL</span>
+                    </div>
                 </div>
-                <div>
-                    <div class="is-size-5">
-                        Textbook Assessment Portal: Award-Winning Full-Stack
-                        MERN Application developed for Smart India Hackathon
-                        2023, streamlining textbook assessments.
+
+                <div class="project">
+                    <div class="title">
+                        <div class="controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                            <p>Textbook Assessment</p>
+                        </div>
+                        <a
+                            target="_blank"
+                            href="https://github.com/SatvikG7/Textbook-Assessment-Portal"
+                            >↗️</a
+                        >
                     </div>
-                    <a
-                        class="is-size-5"
-                        target="_blank"
-                        href="https://github.com/SatvikG7/Textbook-Assessment-Portal"
-                        >github.com/SatvikG7/Textbook-Assessment-Portal</a
-                    >
+                    <div class="subtitle">
+                        Award-Winning Full-Stack MERN Application developed for
+                        Smart India Hackathon 2023, streamlining textbook
+                        assessments.
+                    </div>
+                    <div class="chips">
+                        <span class="chip">MERN</span>
+                        <span class="chip">Full-Stack</span>
+                    </div>
                 </div>
-                <div>
-                    <div class="is-size-5">
-                        COEPTECH ERP: A Comprehensive ERP System for COEP,
-                        featuring modules like LeavePro, VenueMaster, Resultify,
-                        and more, built using React.js, Next.js, and MongoDB.
+
+                <div class="project">
+                    <div class="title">
+                        <div class="controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                            <p>COEPTECH ERP</p>
+                        </div>
+                        <a
+                            target="_blank"
+                            href="https://github.com/SatvikG7/COEPTECH-HACKATHON"
+                            >↗️</a
+                        >
                     </div>
-                    <a
-                        class="is-size-5"
-                        target="_blank"
-                        href="https://github.com/SatvikG7/COEPTECH-HACKATHON"
-                        >github.com/SatvikG7/COEPTECH-HACKATHON</a
-                    >
+                    <div class="subtitle">
+                        A Comprehensive ERP System for COEP, featuring modules
+                        like LeavePro, VenueMaster, Resultify, and more, built
+                        using React.js, Next.js, and MongoDB.
+                    </div>
+                    <div class="chips">
+                        <span class="chip">React.js</span>
+                        <span class="chip">Next.js</span>
+                        <span class="chip">MongoDB</span>
+                    </div>
                 </div>
-                <div>
-                    <div class="is-size-5">
-                        TXT-Share: Seamlessly Share Text Across Your Devices
-                        with Google Sign-In. Say goodbye to messaging apps and
-                        emails for quick, hassle-free text sharing!
+
+                <div class="project">
+                    <div class="title">
+                        <div class="controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                            <p>TXT-Share</p>
+                        </div>
+                        <a target="_blank" href="https://txt-share.web.app"
+                            >↗️</a
+                        >
                     </div>
-                    <a
-                        class="is-size-5"
-                        target="_blank"
-                        href="https://txt-share.web.app"
-                        >txt-share.web.app</a
-                    >
+                    <div class="subtitle">
+                        Seamlessly Share Text Across Your Devices with Google
+                        Sign-In. Say goodbye to messaging apps and emails for
+                        quick, hassle-free text sharing!
+                    </div>
+                    <div class="chips">
+                        <span class="chip">Google Sign-In</span>
+                    </div>
                 </div>
-                <div>
-                    <div class="is-size-5">
-                        TURL: Your Go-To Link Shortener. Built with Next.js,
-                        GraphQL, and TailwindCSS, ensuring 99% uptime.
+
+                <div class="project">
+                    <div class="title">
+                        <div class="controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                            <p>TURL</p>
+                        </div>
+                        <a target="_blank" href="https://turl.vercel.app">↗️</a>
                     </div>
-                    <a
-                        class="is-size-5"
-                        target="_blank"
-                        href="https://turl.vercel.app"
-                        >turl.vercel.app</a
-                    >
+                    <div class="subtitle">
+                        Your Go-To Link Shortener. Built with Next.js, GraphQL,
+                        and TailwindCSS, ensuring 99% uptime.
+                    </div>
+                    <div class="chips">
+                        <span class="chip">Next.js</span>
+                        <span class="chip">GraphQL</span>
+                        <span class="chip">TailwindCSS</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="links" class="is-size-3">
-            Links:
-            <div class="is-flex is-flex-direction-row is-flex-wrap-wrap">
-                <div class="is-flex is-flex-direction-column">
-                    <div class="is-size-4">Github</div>
+        </section>
+        <section class="links">
+            <p class="title">Links:</p>
+            <div class="links-container">
+                <div class="link">
+                    <div class="link-type">Github</div>
                     <a
-                        class="is-size-4"
+                        class="link-anchor"
                         target="_blank"
                         href="https://github.com/SatvikG7"
                         >github.com/SatvikG7</a
                     >
                 </div>
-                <div class="is-flex is-flex-direction-column">
-                    <div class="is-size-4">Gitlab</div>
+                <div class="link">
+                    <div class="link-type">Gitlab</div>
                     <a
-                        class="is-size-4"
+                        class="link-anchor"
                         target="_blank"
                         href="https://gitlab.com/SatvikG7"
                         >gitlab.com/SatvikG7</a
                     >
                 </div>
-                <div class="is-flex is-flex-direction-column">
-                    <div class="is-size-4">Leetcode</div>
+                <div class="link">
+                    <div class="link-type">Leetcode</div>
                     <a
-                        class="is-size-4"
+                        class="link-anchor"
                         target="_blank"
                         href="https://leetcode.com/SatvikG7/"
                         >leetcode.com/SatvikG7</a
                     >
                 </div>
-                <div class="is-flex is-flex-direction-column">
-                    <div class="is-size-4">Codeforces</div>
+                <div class="link">
+                    <div class="link-type">Codeforces</div>
                     <a
-                        class="is-size-4"
+                        class="link-anchor"
                         target="_blank"
                         href="https://codeforces.com/profile/SatvikG7"
                         >codeforces.com/profile/SatvikG7</a
                     >
                 </div>
-                <div class="is-flex is-flex-direction-column">
-                    <div class="is-size-4">BioPage</div>
+                <div class="link">
+                    <div class="link-type">BioPage</div>
                     <a
-                        class="is-size-4"
+                        class="link-anchor"
                         target="_blank"
                         href="https://bit.ly/m/SatvikG7"
                         >bit.ly/m/SatvikG7</a
                     >
                 </div>
-                <div class="is-flex is-flex-direction-column">
-                    <div class="is-size-4">Kaggle</div>
+                <div class="link">
+                    <div class="link-type">Kaggle</div>
                     <a
-                        class="is-size-4"
+                        class="link-anchor"
                         target="_blank"
                         href="https://kaggle.com/satvikgaikwad"
                         >kaggle.com/satvikgaikwad</a
                     >
                 </div>
-                <div class="is-flex is-flex-direction-column">
-                    <div class="is-size-4">Linkedin</div>
+                <div class="link">
+                    <div class="link-type">Linkedin</div>
                     <a
-                        class="is-size-4"
+                        class="link-anchor"
                         target="_blank"
                         href="https://www.linkedin.com/in/satvikg7/"
                         >www.linkedin.com/in/satvikg7</a
                     >
                 </div>
-                <div class="is-flex is-flex-direction-column">
-                    <div class="is-size-4">Instagram</div>
+                <div class="link">
+                    <div class="link-type">Instagram</div>
                     <a
-                        class="is-size-4"
+                        class="link-anchor"
                         target="_blank"
                         href="https://www.instagram.com/satvik_g_7/"
                         >@satvik_g_7</a
                     >
                 </div>
-                <div class="is-flex is-flex-direction-column">
-                    <div class="is-size-4">X</div>
+                <div class="link">
+                    <div class="link-type">X</div>
                     <a
-                        class="is-size-4"
+                        class="link-anchor"
                         target="_blank"
                         href="https://x.com/satvik_g_7"
                         >@satvik_g_7</a
                     >
                 </div>
             </div>
-        </div>
-        <div id="skills" class="is-size-3">
-            Skills:
+        </section>
+        <section class="skills">
+            <p class="title">Skills:</p>
             <ul id="skills-list">
-                <li class="is-size-4">
-                    Programming Languages: C/C++, Go, Python, Javascript
-                    (Node.js), Typescript
+                <li class="skill-type">
+                    <span class="skill-category">Programming Languages:</span>
+                    <div class="skills-chips">
+                        <span> C/C++ </span>
+                        <span> Go </span>
+                        <span> Python </span>
+                        <span> Javascript (Node.js) </span>
+                        <span> Typescript </span>
+                    </div>
                 </li>
-                <li class="is-size-4">
-                    Javascript Frameworks: React.js, Next.js, Vite.js
+                <li class="skill-type">
+                    <span class="skill-category">Javascript Frameworks:</span>
+                    <div class="skills-chips">
+                        <span> React.js </span>
+                        <span> Next.js </span>
+                        <span> Vite.js </span>
+                    </div>
                 </li>
-                <li class="is-size-4">
-                    Tools & Technologies: Tailwind CSS, Chakra UI, Docker,
-                    Firebase, MongoDB, PostgreSQL, MySQL
+                <li class="skill-type">
+                    <span class="skill-category">Tools & Technologies:</span>
+
+                    <div class="skills-chips">
+                        <span> Tailwind CSS </span>
+                        <span> Chakra UI </span>
+                        <span> Docker </span>
+                        <span> Firebase </span>
+                        <span> MongoDB </span>
+                        <span> PostgreSQL </span>
+                        <span> MySQL </span>
+                    </div>
                 </li>
-                <li class="is-size-4">
-                    AI/ML Frameworks: TensorFlow, PyTorch, Scikit-Learn,
-                    Langchain
+                <li class="skill-type">
+                    <span class="skill-category">AI/ML Frameworks:</span>
+                    <div class="skills-chips">
+                        <span> TensorFlow </span>
+                        <span> PyTorch </span>
+                        <span> Scikit-Learn </span>
+                        <span> Langchain </span>
+                    </div>
                 </li>
             </ul>
-        </div>
+        </section>
     </body>
 </html>
