@@ -1,0 +1,72 @@
+main:
+  - name: nav.posts
+    pageRef: /posts
+    weight: 10
+    params:
+      icon: posts
+  - name: nav.projects
+    pageRef: /projects
+    weight: 20
+    params:
+      icon: projects
+  - name: nav.categories
+    pageRef: /categories
+    weight: 30
+    params:
+      icon: categories
+  - name: nav.tags
+    pageRef: /tags
+    weight: 40
+    params:
+      icon: tags
+  - name: nav.about
+    pageRef: /about
+    weight: 50
+    params:
+      icon: about
+
+# footer menu
+footer:
+  - name: About
+    pageRef: /about
+    weight: 10
+    params:
+      icon: about
+  - name: Projects
+    pageRef: /projects
+    weight: 20
+    params:
+      icon: projects
+  - name: Contact
+    url: mailto:satvikg7@pm.me
+    weight: 30
+    params:
+      icon: contact
+
+# footer social link
+social:
+  - name: GitHub
+    url: https://github.com/SatvikG7
+    weight: 10
+    params:
+      icon: github
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/satvikg7
+    weight: 20
+    params:
+      icon: linkedin
+  - name: Twitter
+    url: https://twitter.com/satvik_g_7
+    weight: 25
+    params:
+      icon: twitter
+  - name: LeetCode
+    url: https://leetcode.com/u/satvikg7
+    weight: 30
+    params:
+      icon: code
+  - name: Email
+    url: mailto:satvikg7@pm.me
+    weight: 40
+    params:
+      icon: email

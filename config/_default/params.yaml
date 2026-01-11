@@ -1,0 +1,211 @@
+# Basic site info with SEO
+description: "Full-Stack Developer passionate about building scalable systems, developer tools, and web applications. BTech student at COEP Technological University, Pune."
+keywords: ["Software Developer", "Full-Stack", "React", "Java", "Spring Boot", "Go", "Portfolio"]
+defaultAuthor: "Satvik Gaikwad"
+language: "en-US"
+shortName: "SatvikG7"  # PWA
+images:
+  - "/images/og-default.avif"
+
+# Favicon
+favicon:
+  svg: ""  # SVG format favicon (recommended)
+
+# Author info
+author:
+  name: "Satvik Gaikwad"
+  title: "Full-Stack Developer"
+  description: "Building scalable systems, developer tools, and web applications."
+  avatar: "https://avatars.githubusercontent.com/u/73837741?v=4"
+  social:
+    - name: "GitHub"
+      url: "https://github.com/SatvikG7"
+      icon: "github"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/satvikg7"
+      icon: "linkedin"
+    - name: "Twitter"
+      url: "https://twitter.com/satvik_g_7"
+      icon: "twitter"
+    - name: "Email"
+      url: "mailto:satvikg7@pm.me"
+      icon: "email"
+
+# Header configuration (modularized)
+header:
+  sticky: true  # Enable sticky navigation bar
+  logo:
+    image: ""  # Logo path relative to static folder, leave empty to use site title first letter
+    link: "/"  # Click to home page
+  # UI Components Control (header controls)
+  showThemeSwitch: true      # Set to false to hide theme style switcher (palette icon)
+  showDarkModeSwitch: true   # Set to false to hide dark mode switcher (sun/moon icon)
+  showLanguageSwitch: false   # Set to false to hide language switcher
+  languageSwitchMode: "dropdown"  # Language switch mode: "dropdown" (show panel) or "cycle" (direct cycle)
+
+# Dock display mode
+# Options: "scroll" (show on scroll up), "always" (always visible), "float" (floating button)
+dock: "scroll"
+
+# TOC (Table of Contents)
+toc:
+  enabled: true         # Enable or disable TOC globally
+  position: "left"      # Options: card left right
+  maxWidth: "280px"
+  maxHeight: "80vh"
+
+# Series (Document Series Navigation)
+series:
+  enabled: true         # Enable or disable Series globally
+  position: "right"     # Options: card left right
+  maxWidth: "280px"
+  maxHeight: "80vh"
+  showProgress: true    # Show reading progress (e.g., "2/5")
+  showInHeader: true    # Show series info card in article header
+
+
+
+# Default color scheme
+colorScheme: "default"
+themes:
+  default:
+    name: "Default"
+    order: 1
+  claude:
+    name: "Claude"
+    order: 2
+  bumblebee:
+    name: "Bumblebee"
+    order: 3
+  emerald:
+    name: "Emerald"
+    order: 4
+  nord:
+    name: "Nord"
+    order: 5
+  sunset:
+    name: "Sunset"
+    order: 6
+  abyss:
+    name: "Abyss"
+    order: 7
+  dracula:
+    name: "Dracula"
+    order: 8
+  amethyst:
+    name: "Amethyst"
+    order: 9
+  slate:
+    name: "Slate"
+    order: 10
+  twitter:
+    name: "Twitter"
+    order: 11
+
+# Home page configuration
+home:
+  recentPostsCount: 5  # Number of recent posts to show on the home page
+
+  # Content order configuration - customize the order of home page sections
+  # Available sections: author-section, recent-posts, featured-projects, page-content
+  # You can add your custom content by creating files in `layouts/_partials/home/` folder, then add it to the list
+  contentOrder:
+    - author-section
+    - page-content
+    - recent-posts
+    - featured-projects.html
+
+
+
+
+# Post configuration
+post:
+  showRelated: true           # show related posts
+  relatedPostsCount: 3        # posts number
+  license:
+    show: true
+    author: "Satvik Gaikwad"
+    name: "CC BY-NC-SA 4.0"
+    description: "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please attribute the source, use non-commercially, and maintain the same license."
+    url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    displayName: "CC BY-NC-SA 4.0"
+
+# Analytics
+analytics:
+  enabled: false
+  baidu:
+    enabled: false
+    id: "your-baidu-analytics-id"
+  clarity:
+    enabled: false
+    id: "your-clarity-analytics-id"
+  google:
+    enabled: false
+    id: "your-google-analytics-id"
+  umami:
+    enabled: false
+    id: "your-umami-website-id"
+    src: "https://umami.com/myscript.js"
+    domains: "example.domain.com"
+
+# KaTeX
+katex:
+  enabled: true
+  delimiters:
+    - left: "$$"
+      right: "$$"
+      display: true
+    - left: "$"
+      right: "$"
+      display: false
+    - left: "\\("
+      right: "\\)"
+      display: false
+    - left: "\\["
+      right: "\\]"
+      display: true
+
+# Mermaid
+mermaid:
+  enabled: true
+
+# GLightbox
+lightbox:
+  enabled: false
+  loop: true
+  width: 80vw
+  height: 80vh
+  touchNavigation: true
+  draggable: true
+  zoomable: true
+  preload: true
+  descPosition: bottom
+
+# Justified Gallery
+justified_gallery:
+  enabled: false
+  rowHeight: 300
+  gutter: 30
+  lastRow: center
+  transitionDuration: 0.3s
+  resizeDebounce: 100
+  rowHeightTolerance: 0.25
+  maxRowsCount: 999999
+  calculateItemsHeight: false
+
+# Code block
+codeblock:
+  collapse:
+    enabled: true
+    defaultState: expanded  # expanded, collapsed
+    autoCollapseLines: 30
+    autoCollapseHeight: 400
+    collapsedHeight: 120
+
+# Reading progress
+readingProgress:
+  enabled: true
+  height: 3
+  showOnHomepage: false
+  smoothScroll: true
+  hideOnComplete: false
