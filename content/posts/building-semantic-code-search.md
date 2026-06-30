@@ -4,10 +4,11 @@ description: "How I built Code Scout - an NLP-powered tool that lets developers 
 date: 2025-01-11
 tags: ["NLP", "LLM", "Python", "Developer Tools"]
 categories: ["Projects", "AI"]
+cover: /images/posts/building-semantic-code-search/hero.png
 featured: true
 ---
 
-As developers, we spend a significant amount of time navigating large codebases. "Where is the authentication logic?" or "How does the payment flow work?" - these are questions we ask daily. Traditional text search falls short because it can't understand *intent*. That's why I built **Code Scout**.
+As developers, we spend a significant amount of time navigating large codebases. "Where is the authentication logic?" or "How does the payment flow work?" - these are questions we ask daily. Traditional text search falls short because it can't understand _intent_. That's why I built **Code Scout**.
 
 ## The Problem
 
@@ -25,18 +26,14 @@ Code Scout uses semantic search powered by LLMs to understand natural language q
 
 The system is built with multiple layers:
 
-```
-┌─────────────────┐     ┌─────────────┐     ┌──────────────┐
-│   VS Code Ext   │────▶│  Flask API  │────▶│   ChromaDB   │
-│   Next.js Web   │     │             │     │  (Vectors)   │
-│   Python CLI    │     └─────────────┘     └──────────────┘
-└─────────────────┘            │
-                               ▼
-                    ┌─────────────────────┐
-                    │  Llama 3.1 / Gemma2 │
-                    │    (Embeddings)     │
-                    └─────────────────────┘
-```
+![Ingestion Pipeline](/images/posts/building-semantic-code-search/ingestion.png)
+
+<p style="text-align: center;"> Ingestion Pipeline </p>
+<br/>
+
+![Query Answering](/images/posts/building-semantic-code-search/query-answering.png)
+
+<p style="text-align: center;"> Query Answering </p>
 
 ### Key Components
 
@@ -53,7 +50,10 @@ The system is built with multiple layers:
 ## What's Next
 
 I'm exploring adding:
+
 - Real-time indexing as you code
+  ![Webhooks](/images/posts/building-semantic-code-search/hooks.png)
+
 - Cross-repository search
 - Integration with more IDEs
 
@@ -61,4 +61,4 @@ Check out the project on [GitHub](https://github.com/SatvikG7/CodeScout) and let
 
 ---
 
-*This post is part of my series on building developer tools. Follow along for more deep dives into the technical challenges of modern software development.*
+_This post is part of my series on building developer tools. Follow along for more deep dives into the technical challenges of modern software development._

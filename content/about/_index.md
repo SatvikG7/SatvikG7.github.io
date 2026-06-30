@@ -1,7 +1,7 @@
 ---
 title: "About"
 layout: "about"
-summary: "Full-Stack Developer passionate about building scalable systems and developer tools"
+# summary: "Full-Stack Developer passionate about building scalable systems and developer tools"
 date: 2026-01-11T00:00:00+05:30
 links:
   - name: "GitHub"
@@ -20,15 +20,25 @@ links:
     icon: "https://codeforces.com/codeforces.org/s/96765/favicon-96x96.png"
 ---
 
-## 👋 About Me
+<!-- ## 👋 About Me -->
 
-Hey there! I'm a software developer currently pursuing my BTech in Electronics and Telecommunication at **COEP Technological University, Pune** 🎓 (Expected May 2026). 
+Hey there! I'm a software developer with a BTech in Electronics and Telecommunication Engineering from **COEP Technological University, Pune 🎓**.
 
 I'm passionate about building developer tools 🛠️, scalable microservices ⚡, and full-stack web applications 🌐. I've worked on everything from NLP-based code search engines 🔍 to privacy-focused analytics platforms 📊, and I love diving into new technologies to solve interesting problems!
 
 ---
 
 ## 💼 Experience
+
+### 🟠 Workday — Machine Learning Intern
+*📅 May 2026 – Jul 2026 | 📍 Pune, India*
+
+- 🤖 Contributed to the development of an internal **AI-powered sales assistant** serving **3,000+ Account Executives**, enabling analysis of customer data, identification of business opportunities, and generation of actionable insights from enterprise data sources including Salesforce, Clari, Tecton, and internal knowledge repositories
+- 🧠 Improved the platform's **LangGraph-based multi-agent architecture** by testing and refining agent routing strategies, enhancing the reliability and effectiveness of agent orchestration
+- 💬 Developed a **chat reconciliation mechanism** that enabled seamless session recovery across page refreshes and transient network failures by buffering streamed LLM responses in memory and synchronizing them with MongoDB-backed conversation history
+- 📊 Built an automated **load-testing framework** for agentic workflows, replacing manual Locust-based testing with a scalable system that validated support for **35 concurrent users** while capturing advanced LLM metrics including **Time-to-First-Token (TTFT), token throughput, and inter-token latency**, complemented by visual performance analytics
+- 📝 Designed and implemented a **dynamic prompt management system** supporting **20+ prompts**, decoupling prompts from the application codebase and enabling runtime prompt updates, version control, and A/B experimentation. Integrated **Databricks MLflow** for prompt tracing and leveraged the internal agent evaluation framework to validate prompt and agent behavior
+- ⚙️ Worked with **Python, React, LangGraph, Amazon Bedrock, Amazon S3, PySpark, Databricks, and MLflow** to build and improve production-scale generative AI workflows and developer tooling
 
 ### 💳 Mastercard — Software Development Intern
 *📅 May 2025 – Jul 2025 | 📍 Pune, India*
